@@ -472,7 +472,7 @@ merge_sort2T (x:y:xs)= (z3,cont3+cont1+cont2)
 
 
 dividT::Ord a=>[a]->([[a]],Int)
-dividT []= ([],0)
+dividT [x]= ([[x]],0)
 dividT (x:y:xs) 
                 |x<y=(([x,y]:zs),cont+1)
                 |otherwise = (([y,x]:zs),cont+1)
